@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60sp"-->
+<!--        android:background=""-->
+<!--        />-->
+
+    <LinearLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:background="#333333"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   main.py"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run"
+
+            android:layout_marginStart="150sp"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/toolbarLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lineNumberStrip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#393737"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lineNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+
+                android:textColor="#F3F0F0"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_txt_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#232427"
+            android:inputType="textMultiLine"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+
+            android:textColor="#FFC107"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
