@@ -37,9 +37,6 @@ String s_q= "'";
             "def", "if", "else", "elif", "while", "for", "in", "return", "print", "import",
             "break", "continue", "true", "false", "and", "or", "not", "for", "while",  "class",
            "from", "except", "exec", "print", "return", "yield", "lambda", "global"
-
-
-
             // Add more Python keywords as needed
     ));
 
@@ -133,7 +130,7 @@ String s_q= "'";
 //                  String s_1 = edt_txt_code.getText().toString();
 //                   edt_txt_code.setSelection(s_1.length()-1);
 //               }
-            }
+             }
             public void afterTextChanged(Editable s) {
                 if(isDeleting==true)
                                return;
@@ -187,7 +184,7 @@ String s_q= "'";
                 //here we call our script with name myscript
                 PyObject pyobj=py.getModule("myscript");
                 PyObject obj=pyobj.callAttr("main",edt_txt_code.getText().toString());
-              str  =obj.toString();
+                str  =obj.toString();
                 Intent intent=new Intent(MainActivity.this, OutputActivity.class);
                 intent.putExtra("op",str);
                 startActivity(intent);

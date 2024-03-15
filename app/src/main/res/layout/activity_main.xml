@@ -53,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#393737"
+            android:scrollbars="vertical"
             android:orientation="vertical">
 
             <TextView
